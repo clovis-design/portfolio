@@ -21,13 +21,42 @@
 <div class="section-2 text-white text-center d-flex justify-content-center">
     <div class="col-sm-6 padding-class">
         <h4 class="text-white font-size-title">Hi, I’m Matt. Nice to meet you.</h4>
-        <p class="font-size-paragraph">Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+        <p class="font-size-paragraph">Je m'appelle Clovis Sanceo, j'ai 15 ans bientôt 16. Je voudrai rentrer dasn votre lycée car j'adore tout ce qui touche a la technologie y compris la fabrication de projets qui permette de surporter les personne dans leur tache cotidienne mais ce qui me fait 
+            le plus kiffer c'est le faite de coder l'objet technologique. J'aimeraui rentrée chez vous car lors de mon mini stage chez vous j'ai pus comfirmer mon choix de venir chez vous car vous proposer des options très interessantes comme l'option robotix que j'ai decouvert lors de votre video sur Youtube.</p>
+        <button nz-button [nzType]="'primary'" (click)="showModal()" class="section-2 box-shadow-inherit"><span>Lire la suite...</span></button>
+            <nz-modal [(nzVisible)]="isVisible" nzWidth="1000px" nzTitle="Lettre de Motivation" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+                <p>impasse de roscariou</p>
+                    <p>Locunolé</p> 
+                    
+                    
+                    <p>Objet : demander pour rentrer dans colbert</p>
+                    
+                    
+                    
+                    <p>Madame, Monsieur,</p>
+                    
+                   <p> Présentation:
+                       Je m'appelle Clovis Sanceo, j'ai 15 ans bientôt 16. Je voudrai rentrer dasn votre lycée car j'adore tout ce qui touche a la technologie y compris la fabrication de projets qui permette de surporter les personne dans leur tache cotidienne mais ce qui me fait 
+                       le plus kiffer c'est le faite de coder l'objet technologique. J'aimeraui rentrée chez vous car lors de mon mini stage chez vous j'ai pus comfirmer mon choix de venir chez vous car vous proposer des options très interessantes comme l'option robotix que j'ai decouvert lors de votre video sur Youtube.  
+                    
+                    Mes Projets:
+                    J'ai réalisé plusieur projets : réalisation d'un site web de test (https://fundex-27fc5.web.app/), 
+                    ce site a été réaliser par moi avec de mon grand frère. Ce site avait pour but de m'apprendre certaine base dans le code. Un mini mario a été créer sur Scratch 2, des réalisation 3D PLA et résine, des réalisation sur arduino 
+                    
+                    Pour voir toute mes réalisation vous pouvez allé voir ce site web qui a été réalisé par mes soins (https://portfolio-beb88.web.app/).
+                    
+                    les remerciment:
+                    Dans l’attente de vous rencontrer prochainement, pour pouvoir vous exprimer ma pleine motivation, je vous prie de croire, Madame, Monsieur, à l’expression de mes salutations distinguées.
+                    
+                    Clovis Sanceo
+                    </p>
+        </nz-modal>
     </div>
 </div>
 
  <div class="d-flex justify-content-center text-center font-size-column negative-margin pb-5">
         <div class="col col-sm-3 border-column-left border-right-column border-top-and-botton border-radius-left shadow-sm bg-white ">
-            1 of 1
+            <img src="../assets/téléchargement.svg" alt="" class="icone">
             <br>je m'appele clovis fegy fsfbh sfbehsyfh sbfguse bfsghb nfhsb
             <br>j'ai 16 ans
         </div>
@@ -42,13 +71,13 @@
     <h2 class="text-center">My Projects 3D</h2>
     <div class="d-flex justify-content-center">
     <div class="container-image">
-        <img src="../assets/IMG_9780.JPG" alt="" class="image">
+        <img src="../assets/repair-csaque-min.JPG" alt="" class="image">
              <div class="overlay">
                 <h2 class="text-image">Voilà un casque que j'ai réparer grace a l'impréssion 3D et à la soudure.</h2>
             </div>
     </div>
     <div class="container-image">
-        <img src="../assets/IMG_9782.JPG" alt="" class="image">
+        <img src="../assets/pot-lévitation-min.JPG" alt="" class="image">
              <div class="overlay">
                 <h2 class="text-image">Voilà un casque que j'ai réparer grace a l'impréssion 3D et à la soudure.</h2>
             </div>
