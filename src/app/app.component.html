@@ -8,7 +8,7 @@
                 nzType="default"
                 class="font-weight-normal pr-3 nav-font-size d-flex align-items-center background-white no-border not-focus not-hover"
             >
-                Lettre de motivation
+                <a href="#letterMotivation">Lettre de motivation</a>
             </button>
             <button
                 nz-button
@@ -16,7 +16,7 @@
                 nzType="default"
                 class="font-weight-normal pr-3 nav-font-size d-flex align-items-center background-white no-border not-focus not-hover"
             >
-                Projets
+                <a href="#projects">Projets</a>
             </button>
             <button
                 nz-button
@@ -25,7 +25,7 @@
                 nzShape="round"
                 class="font-weight-normal nav-font-size btn-contact d-flex align-items-center background-white"
             >
-                Contact
+                <a href="#Contact">Contact</a>
             </button>
         </div>
     </div>
@@ -41,7 +41,10 @@
     </div>
 </div>
 
-<div class="section-2 text-white text-center d-flex justify-content-center">
+<div
+    class="section-2 text-white text-center d-flex justify-content-center"
+    id="letterMotivation"
+>
     <div class="col-sm-6 padding-class">
         <h4 class="text-white font-size-title">
             Hi, I’m Matt. Nice to meet you.
@@ -54,6 +57,7 @@
             nzCheckedChildren="EN"
             nzUnCheckedChildren="FR"
             (ngModelChange)="handleTrantslateMotivationLetter()"
+            class="pr-3"
         ></nz-switch>
         <button
             nz-button
@@ -61,7 +65,7 @@
             (click)="showModal()"
             class="section-2 border-section-3 box-shadow-inherit"
         >
-            <span>Lire la suite...</span>
+            Lire la suite...
         </button>
         <nz-modal
             [(nzVisible)]="isVisible"
@@ -70,37 +74,7 @@
             (nzOnCancel)="handleCancel()"
             (nzOnOk)="handleOk()"
         >
-            <p>impasse de roscariou</p>
-            <p>Locunolé</p>
-
-            <p>Objet : demander pour rentrer dans colbert</p>
-
-            <p>Madame, Monsieur,</p>
-
-            <p>
-                Présentation: Je m'appelle Clovis Sanceo, j'ai 15 ans. Je
-                voudrai rentrer dans votre lycée car j'adore tout ce qui touche
-                a la technologie y compris la fabrication de projets qui
-                permette de surporter les personne dans leur tache cotidienne
-                mais ce qui me fait le plus kiffer c'est le faite de coder
-                l'objet technologique. J'aimerai rentrée chez vous car lors de
-                mon mini stage chez vous j'ai pus comfirmer mon choix de venir
-                chez vous car vous proposer des options très interessantes comme
-                l'option robotix que j'ai decouvert lors de votre video sur
-                Youtube. Mes Projets: J'ai réalisé plusieur projets :
-                réalisation d'un site web de test
-                (https://fundex-27fc5.web.app/), ce site a été réaliser par moi
-                avec de mon grand frère. Ce site avait pour but de m'apprendre
-                certaine base dans le code. Un mini mario a été créer sur
-                Scratch 2, des réalisation 3D PLA et résine, des réalisation sur
-                arduino Pour voir toute mes réalisation vous pouvez allé voir ce
-                site web qui a été réalisé par mes soins
-                (https://portfolio-beb88.web.app/). les remerciment: Dans
-                l’attente de vous rencontrer prochainement, pour pouvoir vous
-                exprimer ma pleine motivation, je vous prie de croire, Madame,
-                Monsieur, à l’expression de mes salutations distinguées. Clovis
-                Sanceo
-            </p>
+            {{ motivationLetter }}
         </nz-modal>
     </div>
 </div>
@@ -126,7 +100,7 @@
         3 of 3
     </div>
 </div>
-<div class="padding-project margin-project">
+<div class="padding-project margin-project" id="projects">
     <div class="pading-project">
         <h2 class="text-center">My Projects 3D</h2>
         <div class="d-flex justify-content-center">
@@ -136,7 +110,7 @@
                     alt=""
                     class="image"
                 />
-                <div class="overlay">
+                <div class="overlay cursor-pointer" (click)="showModal()">
                     <h2 class="text-image">
                         Voilà un casque que j'ai réparer grace a l'impréssion 3D
                         et à la soudure.
@@ -221,6 +195,43 @@
             </div>
         </div>
     </div>
+</div>
+
+<div
+    class="section-2 text-white text-center d-flex justify-content-center flex-column align-items-center"
+>
+    <div class="paddind-img">
+        <img src="../assets/logo-white.svg" alt="" class="logo" />
+    </div>
+    <p class="font-size-baseline color-text">
+        Living, learning, & leveling up one day at a time.
+    </p>
+
+    <div class="mb-4 row">
+        <a
+            target="_blank"
+            href="https://github.com/clovis-design"
+            class="d-flex justify-content-center border-round background-color-logo-footer mr-3"
+            id="Contact"
+            ><i
+                nz-icon
+                nzType="github"
+                nzTheme="outline"
+                class="texte-decoration p-3 icone-size icone-github"
+            ></i
+        ></a>
+        <a
+            href="mailto:clovis.sanceo@yahoo.com"
+            class="d-flex justify-content-center border-round background-color-logo-footer"
+            ><i
+                nz-icon
+                nzType="mail"
+                nzTheme="outline"
+                class="texte-decoration p-3 icone-size icone-github"
+            ></i
+        ></a>
+    </div>
+    <p class="color-text font-size-contact">Made with ❤️ by Clovis Sanceo</p>
 </div>
 
 <router-outlet></router-outlet>
