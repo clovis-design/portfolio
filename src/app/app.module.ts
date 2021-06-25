@@ -11,12 +11,19 @@ import { NzButtonModule } from 'ng-zorro-antd/button'
 import { fr_FR } from 'ng-zorro-antd/i18n'
 import { registerLocaleData } from '@angular/common'
 import fr from '@angular/common/locales/fr'
-import { NzIconModule, NzModalModule, NzSwitchModule } from 'ng-zorro-antd'
+import {
+    NzCarouselModule,
+    NzIconModule,
+    NzModalModule,
+    NzSwitchModule,
+} from 'ng-zorro-antd'
+import { ProjectModalComponent } from './modals/project-modal/project-modal.component'
+import { SanitizeHtmlPipe } from './pipes/SanitizeHtmlPipe'
 
 registerLocaleData(fr)
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, ProjectModalComponent, SanitizeHtmlPipe],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -27,6 +34,7 @@ registerLocaleData(fr)
         NzModalModule,
         NzSwitchModule,
         NzIconModule,
+        NzCarouselModule,
     ],
     providers: [{ provide: NZ_I18N, useValue: fr_FR }],
     bootstrap: [AppComponent],

@@ -1,5 +1,7 @@
+import { ProjectModalService } from './services/project-modal.service'
 import { Component } from '@angular/core'
 import * as data from './translate.json'
+import { ProjectModalType } from './services/project-modal.service'
 
 @Component({
     selector: 'app-root',
@@ -7,14 +9,42 @@ import * as data from './translate.json'
     styleUrls: ['./app.component.less'],
 })
 export class AppComponent {
+    contentProjectHeadphone = {
+        title: 'cloclo',
+        description:
+            "J'ai utilisé de la résine. <br>Matériaux utilisés : <ul class='list-style' style='color:red;'><li>PLA 3mm</li><li>Imprimante CREALITY CR10</li><li>Couleur blanc</li><ul>",
+        imageNames: ['machine-bois.JPG', 'train-bois.JPG'],
+    }
+    contentProjectScratch = {
+        title: 'scratch',
+        description: 'cloclo',
+        imageNames: [
+            'mario-bross.png',
+            'jeux-sorcier.png',
+            'jeux-ball.png',
+            'jeux-perroquet.png',
+            'jeux-dessin.png',
+            'jeux-poisson.png',
+        ],
+    }
+    contentProjectObjet3D = {
+        title: 'scratch',
+        description: 'Voici la réalisation de plusieurs impréssions 3D ',
+        imageNames: [
+            'cochon.JPG',
+            'deadpool.JPG',
+            'éléphant.JPG',
+            'figurine-girl.JPG',
+            'couvercle.JPG',
+        ],
+    }
+
     title = 'portfolio'
     isVisible = false
     englishVersion = true
     modalService = null
-    // motivationLetter =
-    //    "Je m'appelle Clovis Sanceo, j'ai 15 ans bientôt 16. Je voudrai rentrer dasn votre lycée car j'adore tout ce qui touche a la technologie y compris la fabrication de projets qui permette de surporter les personne dans leur tache cotidienne mais ce qui me fait le plus kiffer c'est le faite de coder l'objet technologique.             J'aimeraui rentrée chez vous car lors de mon mini stage chez vous j'ai pus comfirmer mon choix de venir chez vous car vous propose des options très interessantes comme l'option robotix que j'ai decouvert lors de votre video sur Youtube."
     motivationLetter = data.en
-    constructor() {}
+    constructor(private readonly _projectModalService: ProjectModalService) {}
 
     showModal(): void {
         this.isVisible = true
@@ -38,10 +68,8 @@ export class AppComponent {
             this.motivationLetter = data.en
         }
     }
-    showModal2(): void {
-        console.log('bite')
-        this.modalService.confirm({
-            nzTitle: 'Confirm',
-        })
+
+    showProjectModal(data: ProjectModalType): void {
+        this._projectModalService.open(data)
     }
 }

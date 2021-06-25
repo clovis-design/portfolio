@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-6">
+        <p [innerHTML]="data.description | sanitizeHtml"></p>
+    </div>
+    <div class="col-sm-6">
+        <nz-carousel [nzEffect]="effect">
+            <div nz-carousel-content *ngFor="let imageName of data.imageNames">
+                <div
+                    class="container"
+                    [style.background]="
+                        'url(../../../assets/' + imageName + ')'
+                    "
+                ></div>
+            </div>
+        </nz-carousel>
+    </div>
+</div>

@@ -6,7 +6,16 @@
                 nz-button
                 [nzSize]="'large'"
                 nzType="default"
-                class="font-weight-normal pr-3 nav-font-size d-flex align-items-center background-white no-border not-focus not-hover"
+                class="
+                    font-weight-normal
+                    pr-3
+                    nav-font-size
+                    d-flex
+                    align-items-center
+                    background-white
+                    no-border
+                    not-focus not-hover
+                "
             >
                 <a href="#letterMotivation">Lettre de motivation</a>
             </button>
@@ -14,7 +23,16 @@
                 nz-button
                 [nzSize]="'large'"
                 nzType="default"
-                class="font-weight-normal pr-3 nav-font-size d-flex align-items-center background-white no-border not-focus not-hover"
+                class="
+                    font-weight-normal
+                    pr-3
+                    nav-font-size
+                    d-flex
+                    align-items-center
+                    background-white
+                    no-border
+                    not-focus not-hover
+                "
             >
                 <a href="#projects">Projets</a>
             </button>
@@ -23,7 +41,14 @@
                 nzType="default"
                 [nzSize]="'large'"
                 nzShape="round"
-                class="font-weight-normal nav-font-size btn-contact d-flex align-items-center background-white"
+                class="
+                    font-weight-normal
+                    nav-font-size
+                    btn-contact
+                    d-flex
+                    align-items-center
+                    background-white
+                "
             >
                 <a href="#Contact">Contact</a>
             </button>
@@ -31,7 +56,7 @@
     </div>
     <div class="section-1 row d-flex justify-content-center flex-column">
         <h1 class="text-center font-weight-bold">
-            Designer, Front-end Developer & Mentor
+            Schoolboy, Beginner Developer & Robotics enthusiast
         </h1>
         <p class="text-center font-weight-normal font-size-baseline">
             I design and code beautifully simple things, and I love what I do.
@@ -78,37 +103,83 @@
 </div>
 
 <div
-    class="d-flex justify-content-center text-center font-size-column negative-margin pb-5"
+    class="
+        d-flex
+        justify-content-center
+        text-center
+        font-size-column
+        negative-margin
+        pb-5
+    "
 >
     <div
-        class="col col-sm-3 border-column-left border-right-column border-top-and-botton border-radius-left shadow-sm bg-white"
+        class="
+            col col-sm-3
+            border-column-left
+            border-right-column
+            border-top-and-botton
+            border-radius-left
+            shadow-sm
+            bg-white
+        "
     >
-        <img src="../assets/téléchargement.svg" alt="" class="icone" />
-        <br />je m'appele clovis fegy fsfbh sfbehsyfh sbfguse bfsghb nfhsb
-        <br />j'ai 16 ans
+        <img src="../assets/gears.svg" alt="" class="icone mb-5" />
+        <H2>Les Outils Utilisés</H2>
+        <H4>Les Machines</H4>
+        <div class="text-center mr-4 ml-4">
+            <br />Imprimante 3D (CR_10), Imprimante 3D résine Photon (anycubic),
+            Wash & Cure Machine 2.0 (anycubic)
+        </div>
     </div>
+
     <div
-        class="col col-sm-3 border-right-column border-top-and-botton shadow-sm bg-white"
+        class="
+            col col-sm-3
+            border-right-column border-top-and-botton
+            shadow-sm
+            bg-white
+        "
     >
-        coucou c'est clément
+        <img src="../assets/check.svg" alt="" class="icone mb-5" />
+        <H2>Les Avantages</H2>
+        <div class="text-center mr-4 ml-4">
+            <br />Le code est infini <br />Le code est facilment accessible
+            <br />On peut faire du télétrvaille
+        </div>
     </div>
+
     <div
-        class="col col-sm-3 border-right-column border-top-and-botton border-radius-right shadow-sm bg-white"
+        class="
+            col col-sm-3
+            border-right-column border-top-and-botton border-radius-right
+            shadow-sm
+            bg-white
+        "
     >
-        3 of 3
+        <img src="../assets/unprotected.svg" alt="" class="icone mb-5" />
+        <H2>Les Imconvéniants</H2>
+        <div class="text-centermr-4 ml-4">
+            <br />Coder peut être dur si on ne s'accroche pas <br />Sa demande
+            du temps pour pouvoir acquérir les bases
+            <br />
+        </div>
     </div>
 </div>
+
 <div class="padding-project margin-project" id="projects">
     <div class="pading-project">
         <h2 class="text-center">My Projects 3D</h2>
         <div class="d-flex justify-content-center">
-            <div class="container-image">
+            <div
+                class="container-image"
+                (click)="showProjectModal(contentProjectHeadphone)"
+            >
                 <img
                     src="../assets/repair-csaque-min.JPG"
                     alt=""
                     class="image"
                 />
-                <div class="overlay cursor-pointer" (click)="showModal2()">
+                <div class="overlay cursor-pointer">
                     <h2 class="text-image">
                         Voilà un casque que j'ai réparer grace a l'impréssion 3D
                         et à la soudure.
@@ -123,40 +194,38 @@
                 />
                 <div class="overlay">
                     <h2 class="text-image">
-                        Voilà un casque que j'ai réparer grace a l'impréssion 3D
-                        et à la soudure.
+                        Projets d'un pot de plante en lévitation.
                     </h2>
                 </div>
             </div>
             <div class="container-image">
                 <img
-                    src="../assets/imprimante résin-min-compressed.jpg"
+                    src="../assets/imprimante résine 3D.JPG"
                     alt=""
                     class="image"
                 />
                 <div class="overlay">
                     <h2 class="text-image">
-                        Voilà un casque que j'ai réparer grace a l'impréssion 3D
-                        et à la soudure.
+                        Une imprimante 3D qui permet de faire des impréssion en
+                        résine.
                     </h2>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-center">
             <div class="container-image">
-                <img
-                    src="../assets/imprimante_3D-min-min-compressed.jpg"
-                    alt=""
-                    class="image"
-                />
+                <img src="../assets/imprimante 3D.JPG" alt="" class="image" />
                 <div class="overlay">
                     <h2 class="text-image">
-                        Voilà un casque que j'ai réparer grace a l'impréssion 3D
-                        et à la soudure.
+                        Une imprimante 3D qui permet de réaliser des impréssion
+                        en plastique.
                     </h2>
                 </div>
             </div>
-            <div class="container-image">
+            <div
+                class="container-image"
+                (click)="showProjectModal(contentProjectObjet3D)"
+            >
                 <img
                     src="../assets/objet-3D-et-résine-min.JPG"
                     alt=""
@@ -164,8 +233,8 @@
                 />
                 <div class="overlay">
                     <h2 class="text-image">
-                        Voilà un casque que j'ai réparer grace a l'impréssion 3D
-                        et à la soudure.
+                        Voici un extrait des différentes impréssion réaliser par
+                        mes imprimante.
                     </h2>
                 </div>
             </div>
@@ -174,12 +243,14 @@
 
     <h2 class="text-center">My Projects de Code</h2>
     <div class="d-flex justify-content-center">
-        <div class="container-image">
+        <div
+            class="container-image"
+            (click)="showProjectModal(contentProjectScratch)"
+        >
             <img src="../assets/mario-bross.png" alt="" class="image" />
             <div class="overlay">
                 <h2 class="text-image">
-                    Voilà un casque que j'ai réparer grace a l'impréssion 3D et
-                    à la soudure.
+                    Un extrait du code d'un mini mario sur scratch.
                 </h2>
             </div>
         </div>
@@ -187,8 +258,7 @@
             <img src="../assets/code-portfolio.png" alt="" class="image" />
             <div class="overlay">
                 <h2 class="text-image">
-                    Voilà un casque que j'ai réparer grace a l'impréssion 3D et
-                    à la soudure.
+                    Des morceaux de code de site que j'ai créer.
                 </h2>
             </div>
         </div>
@@ -196,7 +266,14 @@
 </div>
 
 <div
-    class="section-2 text-white text-center d-flex justify-content-center flex-column align-items-center"
+    class="
+        section-2
+        text-white text-center
+        d-flex
+        justify-content-center
+        flex-column
+        align-items-center
+    "
 >
     <div class="paddind-img">
         <img src="../assets/logo-white.svg" alt="" class="logo" />
@@ -209,7 +286,13 @@
         <a
             target="_blank"
             href="https://github.com/clovis-design"
-            class="d-flex justify-content-center border-round background-color-logo-footer mr-3"
+            class="
+                d-flex
+                justify-content-center
+                border-round
+                background-color-logo-footer
+                mr-3
+            "
             id="Contact"
             ><i
                 nz-icon
@@ -220,7 +303,12 @@
         ></a>
         <a
             href="mailto:clovis.sanceo@yahoo.com"
-            class="d-flex justify-content-center border-round background-color-logo-footer"
+            class="
+                d-flex
+                justify-content-center
+                border-round
+                background-color-logo-footer
+            "
             ><i
                 nz-icon
                 nzType="mail"
