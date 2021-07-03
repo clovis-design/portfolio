@@ -140,11 +140,12 @@
             bg-white
         "
     >
-        <img src="../assets/check.svg" alt="" class="icone mb-5" />
-        <H2>Les Avantages</H2>
+        <img src="../assets/2-14_.jpg" alt="" class="icone mb-5" />
+        <H2>Les Outils de Code et de Modélisation</H2>
         <div class="text-center mr-4 ml-4">
-            <br />Le code est infini <br />Le code est facilment accessible
-            <br />On peut faire du télétrvaille
+            <br />J'utilise VSCode pour créer des sites web. <br />La
+            modélisation peut être faite par les logiciels Fusion360, FreeCAD et
+            autre .
         </div>
     </div>
 
@@ -156,12 +157,13 @@
             bg-white
         "
     >
-        <img src="../assets/unprotected.svg" alt="" class="icone mb-5" />
-        <H2>Les Imconvéniants</H2>
+        <img src="../assets/arduino-icone.jpg" alt="" class="icone mb-5" />
+        <H2>Les Outils pour Arduino</H2>
         <div class="text-centermr-4 ml-4">
-            <br />Coder peut être dur si on ne s'accroche pas <br />Sa demande
-            du temps pour pouvoir acquérir les bases
-            <br />
+            <br />On utilise le logiciel Arduino pour pouvoir coder les
+            composant qui vienne de cette marque. <br />Pour coder de l'arduino
+            il est nécessaire de faire une formatoin pour aprendre les bases ou
+            d'apprendre en autodidac.
         </div>
     </div>
 </div>
@@ -194,13 +196,16 @@
                 />
                 <div class="overlay">
                     <h2 class="text-image">
-                        Projets d'un pot de plante en lévitation.
+                        Projets d'un pot de plante en lévitation. En cours ...
                     </h2>
                 </div>
             </div>
-            <div class="container-image">
+            <div
+                class="container-image"
+                (click)="showProjectModal(contentProjectImprimante)"
+            >
                 <img
-                    src="../assets/imprimante résine 3D.JPG"
+                    src="../assets/imprimante-résine-3D.JPG"
                     alt=""
                     class="image"
                 />
@@ -254,7 +259,10 @@
                 </h2>
             </div>
         </div>
-        <div class="container-image">
+        <div
+            class="container-image"
+            (click)="showProjectModal(contentProjectVSCode)"
+        >
             <img src="../assets/code-portfolio.png" alt="" class="image" />
             <div class="overlay">
                 <h2 class="text-image">
