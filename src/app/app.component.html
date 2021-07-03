@@ -124,12 +124,15 @@
         "
     >
         <img src="../assets/gears.svg" alt="" class="icone mb-5" />
-        <H2>Les Outils Utilisés</H2>
+        <H2>Les Outils utilisés impression 3D, résine</H2>
         <H4>Les Machines</H4>
         <div class="text-center mr-4 ml-4">
-            <br />Imprimante 3D (CR_10), Imprimante 3D résine Photon (anycubic),
-            Wash & Cure Machine 2.0 (anycubic)
+            <br />Imprimante 3D (CR_10) <br />
+            Imprimante 3D résine Photon (anycubic)
+            <br />Wash & Cure Machine 2.0 (anycubic)
         </div>
+        <H4 class="mt-5">Les logiciels</H4>
+        <br />Ultimaker Cura <br />freeCAD <br />Fusion360 <br />Chitubox
     </div>
 
     <div
@@ -141,12 +144,17 @@
         "
     >
         <img src="../assets/2-14_.jpg" alt="" class="icone mb-5" />
-        <H2>Les Outils de Code et de Modélisation</H2>
+        <H2>Les Outils de Code utilisés</H2>
+        <H4 class="mt-5">Setup</H4>
         <div class="text-center mr-4 ml-4">
-            <br />J'utilise VSCode pour créer des sites web. <br />La
-            modélisation peut être faite par les logiciels Fusion360, FreeCAD et
-            autre .
+            <br />souris logitech <br />
+            clavier déporté klim <br />
+            ordinateur lenovo
+            <br />
+            écran benq <br />casque hyperX
         </div>
+        <H4 class="mt-5">Les logiciels & programmes</H4>
+        <br />VSCode <br />Html 5 & Css 3 <br />Ts(type script)
     </div>
 
     <div
@@ -158,16 +166,17 @@
         "
     >
         <img src="../assets/arduino-icone.jpg" alt="" class="icone mb-5" />
-        <H2>Les Outils pour Arduino</H2>
+        <H2>Les Outils utilisés pour Arduino</H2>
+        <H4 class="mt-5">Matériel</H4>
         <div class="text-centermr-4 ml-4">
-            <br />On utilise le logiciel Arduino pour pouvoir coder les
-            composant qui vienne de cette marque. <br />Pour coder de l'arduino
-            il est nécessaire de faire une formatoin pour aprendre les bases ou
-            d'apprendre en autodidac.
+            <br />Câble USB <br />Écran LCD1602 <br />Servo(SG90) <br />HC-SR501
+            <br />Carte de prototypage
         </div>
+        <H4 class="mt-5">Le logiciel & formations</H4>
+        <br />Arduino <br />Formation avec Adonis Chakra <br />Formation avec
+        Devenir Ingénieur
     </div>
 </div>
-
 <div class="padding-project margin-project" id="projects">
     <div class="pading-project">
         <h2 class="text-center">My Projects 3D</h2>
@@ -176,24 +185,19 @@
                 class="container-image"
                 (click)="showProjectModal(contentProjectHeadphone)"
             >
-                <img
-                    src="../assets/repair-csaque-min.JPG"
-                    alt=""
-                    class="image"
-                />
+                <img src="../assets/train-bois.JPG" alt="" class="image" />
                 <div class="overlay cursor-pointer">
                     <h2 class="text-image">
-                        Voilà un casque que j'ai réparer grace a l'impréssion 3D
-                        et à la soudure.
+                        Mechanical Gears 3D wooden puzzle
                     </h2>
                 </div>
             </div>
-            <div class="container-image">
-                <img
-                    src="../assets/pot-lévitation-min.JPG"
-                    alt=""
-                    class="image"
-                />
+
+            <div
+                class="container-image"
+                (click)="showProjectModal(contentProjectPot)"
+            >
+                <img src="../assets/pot4.jpg" alt="" class="image" />
                 <div class="overlay">
                     <h2 class="text-image">
                         Projets d'un pot de plante en lévitation. En cours ...
@@ -211,20 +215,29 @@
                 />
                 <div class="overlay">
                     <h2 class="text-image">
-                        Une imprimante 3D qui permet de faire des impréssion en
+                        Une imprimante 3D qui permet de faire des impressions en
                         résine.
                     </h2>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <div class="container-image">
-                <img src="../assets/imprimante 3D.JPG" alt="" class="image" />
-                <div class="overlay">
-                    <h2 class="text-image">
-                        Une imprimante 3D qui permet de réaliser des impréssion
-                        en plastique.
-                    </h2>
+            <div
+                class="d-flex justify-content-center"
+                (click)="showProjectModal(contentProjectImprimantePLA)"
+            >
+                <div class="container-image">
+                    <img
+                        src="../assets/imprimante-3D.JPG"
+                        alt=""
+                        class="image"
+                    />
+                    <div class="overlay">
+                        <h2 class="text-image">
+                            Une imprimante 3D qui permet de réaliser des
+                            impréssion en plastique.
+                        </h2>
+                    </div>
                 </div>
             </div>
             <div
@@ -233,6 +246,22 @@
             >
                 <img
                     src="../assets/objet-3D-et-résine-min.JPG"
+                    alt=""
+                    class="image"
+                />
+                <div class="overlay">
+                    <h2 class="text-image">
+                        Voici un extrait des différentes impréssion réaliser par
+                        mes imprimante.
+                    </h2>
+                </div>
+            </div>
+            <div
+                class="container-image"
+                (click)="showProjectModal(contentProjectObjet)"
+            >
+                <img
+                    src="../assets/repair-csaque-min.JPG"
                     alt=""
                     class="image"
                 />
