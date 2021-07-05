@@ -25,7 +25,7 @@ export class AppComponent {
         description:
             'En premier lieux vous pouvez voir une mini représentation d’un mini mario fait avec le logiciel Scratch 2 ce mini jeu reprend que les bases d’un mario. Tous les autres mini jeux que vous pouvez voir ont été créés par moi même sur le logiciel Scratch 2. J’ai créer toute sorte de mini jeux qui vont de collecter le plus de point à faire des combat contre un autre joueur ou un jeu de dessin.',
         imageNames: [
-            'mario-bross.png',
+            'mariobross2.png',
             'jeux-sorcier.png',
             'jeux-ball.png',
             'jeux-perroquet.png',
@@ -54,7 +54,7 @@ export class AppComponent {
     contentProjectPot = {
         title: 'Pot en lévitation',
         description:
-            '<ul><li>Réalisation en imprimante 3D </li><li>Pot design High Tech</li><li>Fil PLA blanc</li><li>Temps de réalisation du pot: 2h00</li><li>Appareillage magnétique en attente</li><li>ystème permettant la flottaison d’objets</li><li>Objet tournant à 360°</li></ul>',
+            '<ul><li>Réalisation en imprimante 3D </li><li>Pot design High Tech</li><li>Fil PLA blanc</li><li>Temps de réalisation du pot: 2h00</li><li>Appareillage magnétique en attente</li><li>Système permettant la flottaison d’objets</li><li>Objet tournant à 360°</li></ul>',
         imageNames: [
             'pot1.jpg',
             'pot2.jpg',
@@ -79,21 +79,21 @@ export class AppComponent {
     contentProjectVSCode = {
         title: 'VSCode',
         description:
-            'L’image n°1 représente le code du site sur lequel vous êtes en train de naviguer.Celle-ci montre la partie html du site c’est-à-dire toute la partie visuelle. L’image n°2 vous montre l’un des fichiers du site web nommé fundex ( https://fundex-27fc5.web.app/ ) qui a été réalisé par mes soins. Le code que vous voyez est le “type script” plus communément appelé TS. Il gère toute la partie logistique d’un site web exemple : le fait d’appuyer sur un bouton et que celui-ci nous redirige vers une autre page.',
+            'L’image n°1 représente le code du site sur lequel vous êtes en train de naviguer. Celle-ci montre la partie html du site c’est-à-dire toute la partie visuelle. <br />L’image n°2 vous montre l’un des fichiers du site web nommé fundex <a href=" https://fundex-27fc5.web.app/ ">fundex</a>  qui a été réalisé par mes soins. Le code que vous voyez est le “type script” plus communément appelé TS. Toute la partie logique d’un site web exemple : le fait d’appuyer sur un bouton et que celui-ci nous redirige vers une autre page. Vous pouvez aller voir le code source sur <a href=" https://github.com/clovis-design/portfolio ">Github</a>.',
         imageNames: ['code-portfolio.png', 'fundex.png'],
     }
 
     contentProjectImprimantePLA = {
         title: 'Imprimante 3D caractéristiques',
         description:
-            "<ul><li>Matériels utilisés (PLA, ABS, TPU, Cuivre, Bois, Fibre de Carbone, Gradient Color etc…)</li><li>Logiciels utilisés (PROE, Solid-works, UG, 3d Max, logiciel de conception 3D Rhino, etc…)</li><li>Logiciels d'exploitation (CURA, Repetier-Host, simplifie 3D)</li><li>Système opérationnel (Linux, Windows, OSX)</li></ul>",
+            "<ul><li>Matériels utilisés (PLA, ABS, TPU, Cuivre, Bois, Fibre de Carbone, Gradient Color etc…)</li><li>Logiciels utilisés (PROE, Solid-works, UG, 3d Max, logiciel de conception 3D Rhino, etc…)</li><li>Logiciels d'exploitation (CURA, Repetier-Host, simplifie 3D)</li><li>Système d'exploitation (Linux, Windows, OSX)</li></ul>",
         imageNames: ['imp1.jpg', 'imprimante-3D.JPG', 'imp2.jpg'],
     }
 
     contentProjectImprimante = {
         title: 'Imprimante 3D résine et son matériel',
         description:
-            'Voici mon imprimante 3D en résine de la marque Anycubic du modèle Photon. Elle permet de réaliser des impressions en résine de petite taille.Son fonctionnement est assez simple, elle utilise la lumière UV qui passe par un écran LCD, celui-ci va créer une forme et laissera passer la lumière UV et entraînera la solidification de la résine. Mais il faut faire attention au danger des gaz produits par la résine voilà pourquoi il est obligatoire de porter un masque et des gants afin d’éviter des démangeaisons et des intoxications. Après avoir imprimé votre objet, il faudra procéder à un durcissement par les lumières UV.  le durcir de nouveau par les lumières UV, et le nettoyer. Pour ce faire, on a la possibilité d’utiliser la machine Wash and Cure de chez Anycubic ou de Elegoo . Son fonctionnement est lui aussi très simple, car il y a deux modes wash (laver) et cure (soigner) et un minuteur. Il vous suffit juste de choisir le mode et d’indiquer le temps nécessaire pour votre objet.',
+            'Voici mon imprimante 3D en résine de la marque Anycubic du modèle Photon. Elle permet de réaliser des impressions en résine de petite taille.Son fonctionnement est assez simple, elle utilise la lumière UV qui passe par un écran LCD, celui-ci va créer une forme et laissera passer la lumière UV et entraînera la solidification de la résine. Mais il faut faire attention au danger des gaz produits par la résine voilà pourquoi il est obligatoire de porter un masque et des gants afin d’éviter des démangeaisons et des intoxications. Après avoir imprimé votre objet, il faudra procéder à un durcissement par les lumières UV.  le durcir de nouveau par les lumières UV, et le nettoyer. Pour ce faire, on a la possibilité d’utiliser la machine Wash and Cure de chez Anycubic ou de Elegoo . Son fonctionnement est lui aussi très simple, car il y a deux modes wash (laver) et cure (soigner) et un minuteur. Il suffit juste de choisir le mode et d’indiquer le temps nécessaire pour votre objet.',
         imageNames: [
             'imprimante-résine-3D.JPG',
             'matériel-impréssion.JPG',
