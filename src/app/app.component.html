@@ -72,7 +72,10 @@
 >
     <div class="col-sm-6 padding-class">
         <h4 class="text-white font-size-title">Lettre de Motivation</h4>
-        <p class="font-size-paragraph" [innerHTML]="motivationLetter"></p>
+        <p
+            class="font-size-paragraph"
+            [innerHTML]="motivationLetterExtrait"
+        ></p>
         <nz-switch
             [(ngModel)]="englishVersion"
             nzCheckedChildren="EN"
@@ -94,8 +97,8 @@
             nzTitle="Lettre de Motivation"
             (nzOnCancel)="handleCancel()"
             (nzOnOk)="handleOk()"
+            [nzContent]="motivationLetter"
         >
-            {{ motivationLetter }}
         </nz-modal>
     </div>
 </div>
@@ -147,12 +150,12 @@
         <div class="text-center mr-4 ml-4">
             <br />Souris logitech M705 <br />
             Clavier déporté klim <br />
-            Ordinateur Lenovo ThingPad intel i5, 8G RAM,
+            Ordinateur Lenovo thinkPad intel i5, 8G RAM,
             <br />
             Ecran benq GW2270<br />Casque hyperX Cloud2
         </div>
         <H4 class="mt-5">IDE & Languages</H4>
-        <br />VSCode <br />Html 5 & Css 3 <br />Ts(type script)
+        <br />VSCode <br />Html 5 & Css 3 <br />TS (typescript)
     </div>
 
     <div
@@ -177,7 +180,7 @@
 </div>
 <div class="padding-project margin-project" id="projects">
     <div class="pading-project">
-        <h2 class="text-center">My Projects 3D</h2>
+        <h2 class="text-center">Mes Projets 3D</h2>
         <div class="d-flex justify-content-center">
             <div
                 class="container-image"
@@ -273,7 +276,7 @@
         </div>
     </div>
 
-    <h2 class="text-center">My Projects de Code</h2>
+    <h2 class="text-center">Mes Projets de Code</h2>
     <div class="d-flex justify-content-center">
         <div
             class="container-image"

@@ -106,6 +106,7 @@ export class AppComponent {
     englishVersion = true
     modalService = null
     motivationLetter = data.en
+    motivationLetterExtrait = data.enExtrait
     constructor(private readonly _projectModalService: ProjectModalService) {}
 
     showModal(): void {
@@ -123,7 +124,13 @@ export class AppComponent {
     }
     handleTrantslateMotivationLetter(): void {
         console.log('toto', this.englishVersion)
-        console.log(data.fr)
+        console.log(data.frExtrait)
+        if (this.englishVersion === false) {
+            this.motivationLetterExtrait = data.frExtrait
+        } else {
+            this.motivationLetterExtrait = data.enExtrait
+        }
+
         if (this.englishVersion === false) {
             this.motivationLetter = data.fr
         } else {
