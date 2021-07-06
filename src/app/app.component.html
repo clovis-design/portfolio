@@ -1,4 +1,3 @@
-
 <div class="container">
     <div class="header d-flex justify-content-between pt-4">
         <img src="../assets/logo.svg" alt="" class="logo" />
@@ -73,9 +72,7 @@
 >
     <div class="col-sm-6 padding-class">
         <h4 class="text-white font-size-title">Lettre de Motivation</h4>
-        <p class="font-size-paragraph">
-            {{ motivationLetter }}
-        </p>
+        <p class="font-size-paragraph" [innerHTML]="motivationLetter"></p>
         <nz-switch
             [(ngModel)]="englishVersion"
             nzCheckedChildren="EN"
