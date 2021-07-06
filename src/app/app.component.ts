@@ -79,7 +79,7 @@ export class AppComponent {
     contentProjectVSCode = {
         title: 'VSCode',
         description:
-            'L’image n°1 représente le code du site sur lequel vous êtes en train de naviguer. Celle-ci montre la partie html du site c’est-à-dire toute la partie visuelle. <br />L’image n°2 vous montre l’un des fichiers du site web nommé fundex <a href=" https://fundex-27fc5.web.app/ ">fundex</a>  qui a été réalisé par mes soins. Le code que vous voyez est le “type script” plus communément appelé TS. Toute la partie logique d’un site web exemple : le fait d’appuyer sur un bouton et que celui-ci nous redirige vers une autre page. Vous pouvez aller voir le code source sur <a href=" https://github.com/clovis-design/portfolio ">Github</a>.',
+            'L’image n°1 représente le code du site sur lequel vous êtes en train de naviguer. Celle-ci montre la partie html du site c’est-à-dire toute la partie visuelle. <br />L’image n°2 vous montre l’un des fichiers du site web nommé <a href=" https://fundex-27fc5.web.app/ ">fundex</a>  qui a été réalisé par mes soins. Le code que vous voyez est le “type script” plus communément appelé TS. Toute la partie logique d’un site web exemple : le fait d’appuyer sur un bouton et que celui-ci nous redirige vers une autre page. Vous pouvez aller voir le code source sur <a href=" https://github.com/clovis-design/portfolio ">Github</a>.',
         imageNames: ['code-portfolio.png', 'fundex.png'],
     }
 
