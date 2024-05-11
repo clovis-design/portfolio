@@ -76,11 +76,25 @@ export class AppComponent {
         ],
     }
 
-    contentProjectVSCode = {
+    contentProjectVSCodePorfolio = {
         title: 'VSCode',
         description:
-            'L’image n°1 représente le code du site sur lequel vous êtes en train de naviguer. Celle-ci montre la partie html du site c’est-à-dire toute la partie visuelle. <br />L’image n°2 vous montre l’un des fichiers du site web nommé <a href=" https://fundex-27fc5.web.app/ ">fundex</a>  qui a été réalisé par mes soins. Le code que vous voyez est le “type script” plus communément appelé TS. Toute la partie logique d’un site web exemple : le fait d’appuyer sur un bouton et que celui-ci nous redirige vers une autre page. Vous pouvez aller voir le code source sur <a href=" https://github.com/clovis-design/portfolio ">Github</a>.',
-        imageNames: ['code-portfolio.png', 'fundex.png'],
+            "La première image représente le code du site sur lequel vous êtes en train de naviguer. Celle-ci montre la partie html du site c’est-à-dire toute la partie visuelle. <br />Le code que vous voyez est le “type script” plus communément appelé TS. Toute la partie logique d’un site web exemple : le fait d’appuyer sur un bouton et que celui-ci nous redirige vers une autre page. <br /> La dernière images vous montre le language de mise en forme le LESS ou CSS. Il permet de structurer des site web. Vous pouvez aller voir le code source sur <a href=' https://github.com/clovis-design/portfolio '>Github</a>.",
+        imageNames: ['code-portfolio.png','Portfolio_Parts_TS.PNG','Portfolio_Parts_Deco.PNG'],
+    }
+
+    contentProjectVSCodeFundex = {
+        title: 'VSCode',
+        description:
+            "Vous pouvez voir plusieur des fichiers du site web nommé <a href=' https://fundex-27fc5.web.app/ '>fundex</a>  qui a été réalisé par mes soins. <br /> Les Languages de programation utiliser sont les mêmes que le projet Portfolio. Vous pouvez aller voir le code source sur <a href=' https://github.com/clovis-design/portfolio '>Github</a>.",
+        imageNames: ['Fundex_Interface_Todo.PNG','fundex.png'],
+    }
+
+    contentProjectVSCodeChromeExtension = {
+        title: 'VSCode',
+        description:
+            "Un projet sur une nouvelle manière de programmer avec un nouveau language L'Extension Chrome. Sur ce projet on commence à decouvrir le JSON et le Java Script. Le but de cette extension est de calculé la moyenne générale d'un élève sur Pronote et a terme de lui proposer la future note qu'il devra obtenir pour reussir a avoir la moyenne qu'il désire. Vous pouvez aller voir le code source sur <a href=' https://github.com/clovis-design/portfolio '>Github</a>.",
+        imageNames: ['Extension_Chrome_Interface.PNG', 'Extension_Chrome.PNG', 'Extension_Chrome_Calcule.PNG'],
     }
 
     contentProjectImprimantePLA = {
